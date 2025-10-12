@@ -38,6 +38,34 @@
             background: radial-gradient(circle, rgba(0,217,255,0.1) 0%, transparent 70%);
             animation: pulse 8s ease-in-out infinite;
         }
+.logo-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  color: cyan; /* O el color brillante que tengas */
+  text-shadow: 0 0 20px cyan;
+  z-index: 1;
+  position: relative;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px; /* ajusta el tamaño */
+  transform: translate(-50%, -50%);
+  opacity: 0.3; /* para que se vea el texto debajo */
+  z-index: 2;
+  pointer-events: none; /* evita que bloquee clics */
+}
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); opacity: 0.3; }
@@ -325,9 +353,10 @@
 <body>
     <header class="header">
         <div class="logo-container">
+             <img src="logo.png" alt="Logo CompuTec" class="logo-overlay">
             <div class="logo">
                 <span class="logo-text">COMPUTEC</span>
-              <img src="logo.png" alt="Logo CompuTec" class="header-logo-img"> 
+              
             </div>
         </div>
         <div class="school-info">
