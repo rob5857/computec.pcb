@@ -44,7 +44,7 @@
             50% { transform: scale(1.1); opacity: 0.5; }
         }
 
-        .header-logo {
+        .header-logo-img {
             display: none;
         }
 
@@ -296,6 +296,10 @@
         }
 
         @media (max-width: 768px) {
+            .header-logo-img {
+                max-width: 280px;
+            }
+
             .logo {
                 font-size: 2.5rem;
             }
@@ -317,7 +321,6 @@
 <body>
     <header class="header">
         <div class="logo-container">
-            <div class="logo-border"></div>
             <div class="logo">
                 <span class="logo-text">COMPUTEC</span>
             </div>
@@ -386,22 +389,43 @@
             <h3 class="project-title">Servicio Técnico Escolar</h3>
             <span class="project-type">WBL + PBL</span>
             <p class="project-description">
-                Estudiantes brindan soporte técnico real a la escuela atendiendo tickets de fallas en computadoras, redes, impresoras y otros dispositivos. Se documenta mediante hojas de servicio y protocolos profesionales.
+                Estudiantes brindan soporte técnico integral a la escuela atendiendo tickets reales de fallas en computadoras, redes, impresoras y otros dispositivos. Se documenta mediante hojas de servicio y protocolos profesionales.
             </p>
+            <div class="pcb-features">
+                <h4 class="feature-subtitle">🛠️ Servicios Técnicos</h4>
+                <ul class="feature-list">
+                    <li><strong>Conectividad:</strong> Diagnóstico y solución de problemas de conexión a internet, configuración de redes WiFi y cableado</li>
+                    <li><strong>Impresoras:</strong> Instalación, configuración, resolución de atascos, drivers y conexión en red</li>
+                    <li><strong>SmartBoards:</strong> Configuración, calibración, actualización de software y solución de problemas de conectividad</li>
+                    <li><strong>Reparación de PCs:</strong> Diagnóstico de hardware y software, reemplazo de componentes, limpieza y optimización</li>
+                    <li><strong>Control de Usuarios:</strong> Creación de cuentas, gestión de permisos, recuperación de contraseñas y administración de Active Directory</li>
+                    <li><strong>Mantenimiento Preventivo:</strong> Actualizaciones de sistema, respaldos, antivirus y optimización de rendimiento</li>
+                </ul>
+            </div>
             <p class="project-impact">
-                <strong>Impacto:</strong> Fomenta responsabilidad, trabajo colaborativo y destrezas en diagnóstico y reparación de sistemas tecnológicos en un ambiente real.
+                <strong>Impacto:</strong> Fomenta responsabilidad, trabajo colaborativo y destrezas profesionales en diagnóstico, reparación y administración de sistemas tecnológicos en un ambiente laboral real.
             </p>
         </div>
 
         <div class="project-card">
-            <div class="project-icon">👥</div>
-            <h3 class="project-title">Capacitación Comunitaria</h3>
-            <span class="project-type">Service-Learning + STEM</span>
+            <div class="project-icon">🥽</div>
+            <h3 class="project-title">Realidad Virtual y Gaming</h3>
+            <span class="project-type">PBL + STEM + Retención Escolar</span>
             <p class="project-description">
-                Estudiantes organizan y ejecutan talleres para capacitar a padres y miembros de la comunidad en el uso del sistema PCB, herramientas digitales e inteligencia artificial.
+                Experiencias inmersivas con Meta Quest 2 y 3 para ensamblaje virtual de computadoras, manejo de motherboards y PC Builder Simulation. Incluye entrenamiento profesional en gaming con PlayStation como estrategia de retención escolar y preparación para una industria donde gamers profesionales superan ingresos de muchas carreras tradicionales.
             </p>
+            <div class="pcb-features">
+                <h4 class="feature-subtitle">🎮 Módulos de Aprendizaje</h4>
+                <ul class="feature-list">
+                    <li><strong>Ensamblaje Virtual:</strong> Práctica segura de construcción de PCs en entornos 3D inmersivos</li>
+                    <li><strong>Motherboard Training:</strong> Identificación de componentes, slots, chipsets y conexiones en VR</li>
+                    <li><strong>PC Builder Simulation:</strong> Simuladores avanzados para selección y compatibilidad de hardware</li>
+                    <li><strong>Gaming Profesional:</strong> Entrenamiento con PlayStation para desarrollo de carrera en eSports y streaming</li>
+                    <li><strong>Estrategia de Retención:</strong> Uso del gaming como herramienta motivacional y preparación para profesiones de alta demanda</li>
+                </ul>
+            </div>
             <p class="project-impact">
-                <strong>Impacto:</strong> Promueve la inclusión digital y fortalece vínculos escuela-familia-comunidad.
+                <strong>Impacto:</strong> Prepara estudiantes para carreras tecnológicas emergentes donde profesionales del gaming superan económicamente a muchas profesiones tradicionales, mientras mantiene alta motivación y retención escolar.
             </p>
         </div>
 
